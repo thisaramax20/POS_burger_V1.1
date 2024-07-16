@@ -9,110 +9,140 @@ function toggleMenu() {
 
 let allFoodItems = [
     {
-        name:"Burger",
-        details:[{
+        name: "Burger",
+        details: [{
+            code: "CL-BR-LR-#01",
             name: "Classic Burger (Large)",
             img: "img/burger/classic burger.jpg",
             par: "some text",
             price: 750.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CL-BR-LR",
+            addCartId: "btn-CL-BR-LR",
+            functionName: "addClassicBurgerLarge"
         },
         {
             name: "Classic Burger (Regular)",
             img: "img//burger/large burger.jpg",
             par: "some text",
             price: 1500.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CL-BR-R",
+            addCartId: "btn-CL-BR-R"
         },
         {
             name: "Turkey Burger",
             img: "img/burger/turkey burger.jpg",
             par: "some text",
             price: 1600.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "TU-BR",
+            addCartId: "btn-TU-BR"
         },
         {
             name: "Chicken Burger (Large)",
             img: "img/burger/chicken burger large.jpg",
             par: "some text",
             price: 1400.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CHI-BR-LR",
+            addCartId: "btn-CHI-BR-LR"
         },
         {
             name: "Chicken Burger (Regular)",
             img: "img/burger/chicken burger regular.jpg",
             par: "some text",
             price: 800.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CHI-BR-R",
+            addCartId: "btn-CH-BR-R"
         },
         {
             name: "Cheese Burger (Large)",
             img: "img/burger/cheese burger large.jpg",
             par: "some text",
             price: 1000.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CHE-BR-LR",
+            addCartId: "btn-CHE-BR-LR"
         },
         {
             name: "Cheese Burger (Regular)",
             img: "img/burger/cheese burger regular.jpg",
             par: "some text",
             price: 600.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CHE-BR-R",
+            addCartId: "btn-CHE-BR-R"
         },
         {
             name: "Bacon Burger",
             img: "img/burger/bacon burger.jpg",
             par: "some text",
             price: 650.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "BAC-BR",
+            addCartId: "btn-BAC-BR"
         },
         {
             name: "Shawarma Burger",
             img: "img/burger/shawarma burger.jpg",
             par: "some text",
             price: 800.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "SH-BR",
+            addCartId: "btn-SH-BR"
         },
         {
             name: "Olive Burger",
             img: "img/burger/olive burger.jpg",
             par: "some text",
             price: 1800.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CL-BR-LR",
+            addCartId: "btn-CL-BR-LR"
         },
         {
             name: "Double-Cheese Burger",
             img: "img/burger/double cheese burger.jpg",
             par: "some text",
             price: 1250.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CHE-BR-DB",
+            addCartId: "btn-CHE-BR-DB"
         },
         {
             name: "Crispy Chicken Burger (Regular)",
             img: "img/burger/crispy chicken burger regular.jpg",
             par: "some text",
             price: 1200.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CR-BR-R",
+            addCartId: "btn-CR-BR-R"
         },
         {
             name: "Crispy Chicken Burger (Large)",
             img: "img/burger/crispy chicken burger large.jpg",
             par: "some text",
             price: 1600.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "CR-BR-LR",
+            addCartId: "btn-CR-BR-LR"
         },
         {
             name: "Paneer Burger",
             img: "img/burger/paneer burger.jpg",
             par: "some text",
             price: 900.00,
-            quantity: 10
+            quantity: 10,
+            quantityId: "PN-BR",
+            addCartId: "btn-PN-BR"
         },
         ]
     },
     {
-        name:"Submarine",
-        details:[{
+        name: "Submarine",
+        details: [{
             name: "Crispy Chicken Submarine (Large)",
             img: "img/submarine/submarine.jpg",
             par: "some text",
@@ -178,8 +208,8 @@ let allFoodItems = [
         ]
     },
     {
-        name:"Fries",
-        details:[{
+        name: "Fries",
+        details: [{
             name: "Steak Fries (Large)",
             img: "img/fries/fries.jpg",
             par: "some text",
@@ -224,8 +254,8 @@ let allFoodItems = [
         ]
     },
     {
-        name:"Pasta",
-        details:[{
+        name: "Pasta",
+        details: [{
             name: "Chicken n Cheese Pasta",
             img: "img/pasta/pasta.jpg",
             par: "some text",
@@ -277,8 +307,8 @@ let allFoodItems = [
         ]
     },
     {
-        name:"Chicken",
-        details:[{
+        name: "Chicken",
+        details: [{
             name: "Fried Chicken (Small)",
             img: "img/chicken/chicken.jpg",
             par: "some text",
@@ -323,8 +353,8 @@ let allFoodItems = [
         ]
     },
     {
-        name:"Beverages",
-        details:[{
+        name: "Beverages",
+        details: [{
             name: "Pepsi (330ml)",
             img: "img/beverages/beverages.jpg",
             par: "some text",
@@ -625,57 +655,57 @@ let beverages = [{
 }
 ];
 
-function updateMenu(Obj){
+function updateMenu(Obj) {
     let foods = document.getElementById("foods");
     let content = `<div class="row my-lg-5 my-sm-3 justify-content-center">`;
     let count = 0;
-    Obj.details.forEach(data =>{
-        
-        if(count!=3){
+    Obj.details.forEach(data => {
+
+        if (count != 3) {
             content += `<div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${data.name}</h5>
                             <p class="card-text">${data.par}</p>
-                            <p>Rs.${data.price}</p>
+                            <p id="price">Rs.${data.price}</p>
                                 
-                                <p>Available : ${data.quantity}</p>
+                                <p id="${data.quantityId}">Available : ${data.quantity}</p>
                         </div>
                     </div>
                 </div>`
-                count++;
-        }else{
-            count=0;
-            content+=`</div><div class="row my-lg-5 my-sm-3 justify-content-center">
+            count++;
+        } else {
+            count = 0;
+            content += `</div><div class="row my-lg-5 my-sm-3 justify-content-center">
                         <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${data.name}</h5>
                             <p class="card-text">${data.par}</p>
-                            <p>Rs.${data.price}</p>
+                            <p id="price">Rs.${data.price}</p>
                                 
-                                <p>Available : ${data.quantity}</p>
+                                <p id="${data.quantityId}">Available : ${data.quantity}</p>
                         </div>
                     </div>
                 </div>`
-                count++;
+            count++;
         }
-        
+
     })
 
-    content+=`</div>`;
-    foods.innerHTML=content;
+    content += `</div>`;
+    foods.innerHTML = content;
 }
 
-function updateMenuCart(Obj){
+function updateMenuCart(Obj) {
     let foods = document.getElementById("foods");
     let content = `<div class="row my-lg-5 my-sm-3 justify-content-center">`;
     let count = 0;
-    Obj.details.forEach(data =>{
-        
-        if(count!=3){
+    Obj.details.forEach(data => {
+
+        if (count != 3) {
             content += `<div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
@@ -684,15 +714,15 @@ function updateMenuCart(Obj){
                             <p class="card-text">${data.par}</p>
                             <p>Rs.${data.price}</p>
                                 
-                                <p>Available : ${data.quantity}</p>
-                                <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                <p id="${data.quantityId}">Available : ${data.quantity}</p>
+                                <button onclick="${data.functionName}()" id="${data.addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>`
-                count++;
-        }else{
-            count=0;
-            content+=`</div><div class="row my-lg-5 my-sm-3 justify-content-center">
+            count++;
+        } else {
+            count = 0;
+            content += `</div><div class="row my-lg-5 my-sm-3 justify-content-center">
                         <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
@@ -701,73 +731,75 @@ function updateMenuCart(Obj){
                             <p class="card-text">${data.par}</p>
                             <p>Rs.${data.price}</p>
                                 
-                                <p>Available : ${data.quantity}</p>
-                                <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                <p id="${data.quantityId}">Available : ${data.quantity}</p>
+                                <button onclick="${data.functionName}" id="${data.addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>`
-                count++;
+            count++;
         }
-        
+
     })
 
-    content+=`</div>`;
-    foods.innerHTML=content;
+    content += `</div>`;
+    foods.innerHTML = content;
 }
 
 function updateBurgerMenu() {
-    updateMenu(allFoodItems[0]);   
+    updateMenu(allFoodItems[0]);
 }
 function updateSubmarineMenu() {
-    updateMenu(allFoodItems[1]);   
+    updateMenu(allFoodItems[1]);
 }
 function updateFriesMenu() {
-    updateMenu(allFoodItems[2]);   
+    updateMenu(allFoodItems[2]);
 }
 function updatePastaMenu() {
-    updateMenu(allFoodItems[3]);   
+    updateMenu(allFoodItems[3]);
 }
 function updateChickenMenu() {
-    updateMenu(allFoodItems[4]);   
+    updateMenu(allFoodItems[4]);
 }
 function updateBeveragesMenu() {
-    updateMenu(allFoodItems[5]);   
+    updateMenu(allFoodItems[5]);
 }
 
 
 function updateBurgerMenuCart() {
-    updateMenuCart(allFoodItems[0]);   
+    updateMenuCart(allFoodItems[0]);
 }
 function updateSubmarineMenuCart() {
-    updateMenuCart(allFoodItems[1]);   
+    updateMenuCart(allFoodItems[1]);
 }
 function updateFriesMenuCart() {
-    updateMenuCart(allFoodItems[2]);   
+    updateMenuCart(allFoodItems[2]);
 }
 function updatePastaMenuCart() {
-    updateMenuCart(allFoodItems[3]);   
+    updateMenuCart(allFoodItems[3]);
 }
 function updateChickenMenuCart() {
-    updateMenuCart(allFoodItems[4]);   
+    updateMenuCart(allFoodItems[4]);
 }
 function updateBeveragesMenuCart() {
-    updateMenuCart(allFoodItems[5]);   
+    updateMenuCart(allFoodItems[5]);
 }
 
 let customerDetails = [];
+let cusName;
+let cusTelephone;
 
-function getCustomer(){
-    let cusName = document.getElementById("name").value;
-    let cusTelephone = document.getElementById("telephone").value;
-    if(cusName=="" || cusTelephone==""){
+function getCustomer() {
+    cusName = document.getElementById("name").value;
+    cusTelephone = document.getElementById("telephone").value;
+    if (cusName == "" || cusTelephone == "") {
         alert("All fields must be filled out");
         return false;
-    }else{
+    } else {
         customerDetails.push({
-            name:cusName,
-            telephone:cusTelephone
-        });
-
+            name: cusName,
+            telephone: cusTelephone,
+            items: []
+        })
         let sectionMenu = document.getElementById("menu");
         let content = `<div class="heading">
             <h2 class="text-center">OUR BEST MENU</h2>
@@ -872,10 +904,18 @@ function getCustomer(){
                 </div>
             </div>
         </div>`;
-        sectionMenu.innerHTML=content;        
+        sectionMenu.innerHTML = content;
     }
 }
 
-function addToCart(){
-    
+function addClassicBurgerLarge() {
+    if (allFoodItems[0].details[0].quantity > 0) {
+        let quantity = document.getElementById("CL-BR-LR");
+        customerDetails[customerDetails.length - 1].items.push(allFoodItems[0].details[0].code);
+        quantity.innerText = "Available : "+--allFoodItems[0].details[0].quantity;
+    } else {
+        return false;
+    }
+
+
 }
