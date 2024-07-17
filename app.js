@@ -16,643 +16,618 @@ let allFoodItems = [
             img: "img/burger/classic burger.jpg",
             par: "some text",
             price: 750.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "CL-BR-LR",
             addCartId: "btn-CL-BR-LR",
             functionName: "addClassicBurgerLarge"
         },
         {
+            code: "CL-BR-R-#02",
             name: "Classic Burger (Regular)",
             img: "img//burger/large burger.jpg",
             par: "some text",
             price: 1500.00,
+            discount: 0.15,
             quantity: 10,
+            expiredate: "",
             quantityId: "CL-BR-R",
-            addCartId: "btn-CL-BR-R"
+            addCartId: "btn-CL-BR-R",
+            functionName: "addClassicBurgerRegular"
         },
         {
+            code: "TU-BR-#03",
             name: "Turkey Burger",
             img: "img/burger/turkey burger.jpg",
             par: "some text",
             price: 1600.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "TU-BR",
-            addCartId: "btn-TU-BR"
+            addCartId: "btn-TU-BR",
+            functionName: "addTurkeyburger"
         },
         {
+            code: "CHI-BR-LR-#04",
             name: "Chicken Burger (Large)",
             img: "img/burger/chicken burger large.jpg",
             par: "some text",
             price: 1400.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "CHI-BR-LR",
-            addCartId: "btn-CHI-BR-LR"
+            addCartId: "btn-CHI-BR-LR",
+            functionName: "addChickenBurgerLarge"
         },
         {
+            code: "CHI-BR-R-#05",
             name: "Chicken Burger (Regular)",
             img: "img/burger/chicken burger regular.jpg",
             par: "some text",
             price: 800.00,
+            discount: 0.2,
             quantity: 10,
+            expiredate: "",
             quantityId: "CHI-BR-R",
-            addCartId: "btn-CH-BR-R"
+            addCartId: "btn-CH-BR-R",
+            functionName: "addChickenBurgerRegular"
         },
         {
+            code: "CHE-BR-LR-#06",
             name: "Cheese Burger (Large)",
             img: "img/burger/cheese burger large.jpg",
             par: "some text",
             price: 1000.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "CHE-BR-LR",
-            addCartId: "btn-CHE-BR-LR"
+            addCartId: "btn-CHE-BR-LR",
+            functionName: "addCheeseBurgerLarge"
         },
         {
+            code: "CHE-BR-R-#07",
             name: "Cheese Burger (Regular)",
             img: "img/burger/cheese burger regular.jpg",
             par: "some text",
             price: 600.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "CHE-BR-R",
-            addCartId: "btn-CHE-BR-R"
+            addCartId: "btn-CHE-BR-R",
+            functionName: "addCheeseBurgerRegular"
         },
         {
+            code: "BAC-BR-#08",
             name: "Bacon Burger",
             img: "img/burger/bacon burger.jpg",
             par: "some text",
             price: 650.00,
+            discount: 0.15,
             quantity: 10,
+            expiredate: "",
             quantityId: "BAC-BR",
-            addCartId: "btn-BAC-BR"
+            addCartId: "btn-BAC-BR",
+            functionName: "addBaconBurger"
         },
         {
+            code: "SH-BR-#09",
             name: "Shawarma Burger",
             img: "img/burger/shawarma burger.jpg",
             par: "some text",
             price: 800.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "SH-BR",
-            addCartId: "btn-SH-BR"
+            addCartId: "btn-SH-BR",
+            functionName: "addShawarmaBurger"
         },
         {
+            code: "OL-BR-#10",
             name: "Olive Burger",
             img: "img/burger/olive burger.jpg",
             par: "some text",
             price: 1800.00,
+            discount: 0,
             quantity: 10,
-            quantityId: "CL-BR-LR",
-            addCartId: "btn-CL-BR-LR"
+            expiredate: "",
+            quantityId: "OL-BR",
+            addCartId: "btn-OL-BR",
+            functionName: "addOliveBurger"
         },
         {
+            code: "CHE-BR-DB-#11",
             name: "Double-Cheese Burger",
             img: "img/burger/double cheese burger.jpg",
             par: "some text",
             price: 1250.00,
+            discount: 0.2,
             quantity: 10,
+            expiredate: "",
             quantityId: "CHE-BR-DB",
-            addCartId: "btn-CHE-BR-DB"
+            addCartId: "btn-CHE-BR-DB",
+            functionName: "addCheeseBurgerDouble"
         },
         {
+            code: "CR-BR-R-#12",
             name: "Crispy Chicken Burger (Regular)",
             img: "img/burger/crispy chicken burger regular.jpg",
             par: "some text",
             price: 1200.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "CR-BR-R",
-            addCartId: "btn-CR-BR-R"
+            addCartId: "btn-CR-BR-R",
+            functionName: "addChickenBurgerCrispyRegular"
         },
         {
+            code: "CR-BR-LR-#13",
             name: "Crispy Chicken Burger (Large)",
             img: "img/burger/crispy chicken burger large.jpg",
             par: "some text",
             price: 1600.00,
+            discount: 0.1,
             quantity: 10,
+            expiredate: "",
             quantityId: "CR-BR-LR",
-            addCartId: "btn-CR-BR-LR"
+            addCartId: "btn-CR-BR-LR",
+            functionName: "addChickenBurgerCrispyLarge"
         },
         {
+            code: "PN-BR-#14",
             name: "Paneer Burger",
             img: "img/burger/paneer burger.jpg",
             par: "some text",
             price: 900.00,
+            discount: 0,
             quantity: 10,
+            expiredate: "",
             quantityId: "PN-BR",
-            addCartId: "btn-PN-BR"
+            addCartId: "btn-PN-BR",
+            functionName: "addPaneerBurger"
         },
         ]
     },
     {
         name: "Submarine",
         details: [{
+            code: "CH-SB-CR-LR-#01",
             name: "Crispy Chicken Submarine (Large)",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 2000.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CH-SB-CR-LR",
+            addCartId: "btn-CH-SB-CR-LR",
+            functionName: "addCrispyChickenSubLarge"
         },
         {
+            code: "CH-SB-CR-R-#02",
             name: "Crispy Chicken Submarine (Regular)",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 1500.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CH-SB-CR-R",
+            addCartId: "btn-CH-SB-CR-R",
+            functionName: "addCrispyChickenSubRegular"
         },
         {
+            code: "CH-SB-LR-#03",
             name: "Chicken Submarine (Large)",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 1800.00,
-            quantity: 10
+            discount: 0.03,
+            quantity: 10,
+            quantityId: "CH-SB-LR",
+            addCartId: "btn-CH-SB-LR",
+            functionName: "addChickenSubLarge"
         },
         {
+            code: "CH-SB-R-#04",
             name: "Chicken Submarine (Regular)",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 1400.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CH-SB-R",
+            addCartId: "btn-CH-SB-R",
+            functionName: "addChickenSubRegular"
         },
         {
+            code: "GR-SB-#05",
             name: "Grinder Submarine",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 2300.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "GR-SB",
+            addCartId: "btn-GR-SB",
+            functionName: "addGrinderSub"
         },
         {
+            code: "CHE-SB-#06",
             name: "Cheese Submarine",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 2200.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CHE-SB",
+            addCartId: "btn-CHE-SB",
+            functionName: "addCheeseSub"
         },
         {
+            code: "CHE-CH-SB-DB-#07",
             name: "Double Cheese n Chicken Submarine",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 1900.00,
-            quantity: 10
+            discount: 0.16,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CHE-CH-SB-DB",
+            addCartId: "btn-CHE-CH-SB-DB",
+            functionName: "addDoubleCheeseChickenSub"
         },
         {
+            code: "SP-SB-HG-#08",
             name: "Special Horgie Submarine",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 2800.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "SP-SB-HG",
+            addCartId: "btn-SP-SB-HG",
+            functionName: "addSpecialHorgieSub"
         },
         {
+            code: "MS-SP-SB-#09",
             name: "MOS Special Submarine",
             img: "img/submarine/submarine.jpg",
             par: "some text",
             price: 3000.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "MS-SP-SB",
+            addCartId: "btn-MS-SP-SB",
+            functionName: "addMosSpecialSub"
         },
         ]
     },
     {
         name: "Fries",
         details: [{
+            code: "ST-FR-LR-#01",
             name: "Steak Fries (Large)",
             img: "img/fries/fries.jpg",
             par: "some text",
             price: 1200.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "ST-FR-LR",
+            addCartId: "btn-ST-FR-LR",
+            functionName: "addSteakFriesLarge"
         },
         {
+            code: "ST-FR-MD-#02",
             name: "Steak Fries (Medium)",
             img: "img/fries/fries.jpg",
             par: "some text",
             price: 600.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "ST-FR-MD",
+            addCartId: "btn-ST-FR-MD",
+            functionName: "addSteakFriesMedium"
         },
         {
+            code: "FE-FR-LR-#03",
             name: "French Fries (Large)",
             img: "img/fries/fries.jpg",
             par: "some text",
             price: 800.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "FE-FR-LR",
+            addCartId: "btn-FE-FR-LR",
+            functionName: "addFrenchFriesLarge"
         },
         {
+            code: "FE-FR-MD-#04",
             name: "French Fries (Medium)",
             img: "img/fries/fries.jpg",
             par: "some text",
             price: 650.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "FE-FR-MD",
+            addCartId: "btn-FE-FR-MD",
+            functionName: "addFrenchFriesMedium"
         },
         {
+            code: "FE-FR-SM-#05",
             name: "French Fries (Small)",
             img: "img/fries/fries.jpg",
             par: "some text",
             price: 450.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "FE-FR-SM",
+            addCartId: "btn-FE-FR-SM",
+            functionName: "addFrenchFriesSmall"
         },
         {
+            code: "SW-PT-FR-LR-#06",
             name: "Sweet Potato Fries (Large)",
             img: "img/fries/fries.jpg",
             par: "some text",
             price: 600.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "SW-PT-FR-LR",
+            addCartId: "btn-SW-PT-FR-LR",
+            functionName: "addSweetPotatoFriesLarge"
         }
         ]
     },
     {
         name: "Pasta",
         details: [{
+            code: "CHE-CH-PS-#01",
             name: "Chicken n Cheese Pasta",
             img: "img/pasta/pasta.jpg",
             par: "some text",
             price: 1600.00,
-            quantity: 10
+            discount: 0.15,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CHE-CH-PS",
+            addCartId: "btn-CHE-CH-PS",
+            functionName: "addChickenCheesePasta"
         },
         {
+            code: "CH-PS-PN-#02",
             name: "Chicken Penne Pasta",
             img: "img/pasta/pasta.jpg",
             par: "some text",
             price: 1700.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CH-PS-PN",
+            addCartId: "btn-CH-PS-PN",
+            functionName: "addChickenPenePasta"
         },
         {
+            code: "TU-PS-#03",
             name: "Ground Turkey Pasta Bake",
             img: "img/pasta/pasta.jpg",
             par: "some text",
             price: 2900.00,
-            quantity: 10
+            discount: 0.1,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "TU-PS",
+            addCartId: "btn-TU-PS",
+            functionName: "addTurkeyPasta"
         },
         {
+            code: "CR-PS-#04",
             name: "Creamy Shrimp Pasta",
             img: "img/pasta/pasta.jpg",
             par: "some text",
             price: 2000.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "CR-PS",
+            addCartId: "btn-CR-PS",
+            functionName: "addCreamyPasta"
         },
         {
+            code: "LM-PS-#05",
             name: "Lemon Butter Pasta",
             img: "img/pasta/pasta.jpg",
             par: "some text",
             price: 1950.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "LM-PS",
+            addCartId: "btn-LM-PS",
+            functionName: "addLemonPasta"
         },
         {
+            code: "TN-PS-#06",
             name: "Tagliatelle Pasta",
             img: "img/pasta/pasta.jpg",
             par: "some text",
             price: 2400.00,
-            quantity: 10
+            discount: 0.01,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "TN-PS",
+            addCartId: "btn-TN-PS",
+            functionName: "addTangilatePasta"
         },
         {
+            code: "BK-PS-RV-#07",
             name: "Baked Ravioli",
             img: "img/pasta/pasta.jpg",
             par: "some text",
             price: 2000.00,
-            quantity: 10
+            discount: 0.01,
+            quantity: 10,
+            quantityId: "BK-PS-RV",
+            addCartId: "btn-BK-PS-RV",
+            functionName: "addBakedRavioli"
         }
         ]
     },
     {
         name: "Chicken",
         details: [{
+            code: "FR-CH-SM-#01",
             name: "Fried Chicken (Small)",
             img: "img/chicken/chicken.jpg",
             par: "some text",
             price: 1200.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "FR-CH-SM",
+            addCartId: "btn-FR-CH-SM",
+            functionName: "addFriedChickenSmall"
         },
         {
+            code: "FR-CH-R-#02",
             name: "Fried Chicken (Regular)",
             img: "img/chicken/chicken.jpg",
             par: "some text",
             price: 2300.00,
-            quantity: 10
+            discount: 0.1,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "FR-CH-R",
+            addCartId: "btn-FR-CH-R",
+            functionName: "addFriedChickenRegular"
         },
         {
+            code: "FR-CH-LR-#03",
             name: "Fried Chicken (Large)",
             img: "img/chicken/chicken.jpg",
             par: "some text",
             price: 3100.00,
-            quantity: 10
+            discount: 0.05,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "FR-CH-LR",
+            addCartId: "btn-FR-CH-LR",
+            functionName: "addFriedChickenLarge"
         },
         {
+            code: "HT-WG-LR-#04",
             name: "Hot Wings (Large)",
             img: "img/chicken/chicken.jpg",
             par: "some text",
             price: 2400.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "HT-WG-LR",
+            addCartId: "btn-HT-WG-LR",
+            functionName: "addHotWingsLarge"
         },
         {
+            code: "DV-CH-LR-#05",
             name: "Devilled Chicken (Large)",
             img: "img/chicken/chicken.jpg",
             par: "some text",
             price: 900.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "DV-CH-LR",
+            addCartId: "btn-DV-CH-LR",
+            functionName: "addDevilledChickenLarge"
         },
         {
+            code: "BB-CH-R-#06",
             name: "BBQ Chicken (Regular)",
             img: "img/chicken/chicken.jpg",
             par: "some text",
             price: 2100.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "",
+            quantityId: "BB-CH-R",
+            addCartId: "btn-BB-CH-R",
+            functionName: "addBbqChickenRegular"
         }
         ]
     },
     {
         name: "Beverages",
         details: [{
+            code: "PP-BV-#01",
             name: "Pepsi (330ml)",
             img: "img/beverages/beverages.jpg",
             par: "some text",
             price: 990.00,
-            quantity: 10
+            discount: 0.05,
+            quantity: 10,
+            expiredate: "2025-07-09",
+            quantityId: "PP-BV",
+            addCartId: "btn-PP-BV",
+            functionName: "addPepsi"
         },
         {
+            code: "CC-BV-#02",
             name: "Coca-Cola (330ml)",
             img: "img/beverages/beverages.jpg",
             par: "some text",
             price: 1230.00,
-            quantity: 10
+            discount: 0,
+            quantity: 10,
+            expiredate: "2025-07-09",
+            quantityId: "CC-BV",
+            addCartId: "btn-CC-BV",
+            functionName: "addCocaCola"
         },
         {
+            code: "SP-BV-#03",
             name: "Sprite (330ml)",
             img: "img/beverages/beverages.jpg",
             par: "some text",
             price: 1500.00,
-            quantity: 10
+            discount: 0.03,
+            quantity: 10,
+            expiredate: "2025-07-09",
+            quantityId: "SP-BV",
+            addCartId: "btn-SP-BV",
+            functionName: "addSpriter"
         },
         {
+            code: "MR-BV-#04",
             name: "Mirinda (330ml)",
             img: "img/beverages/beverages.jpg",
             par: "some text",
             price: 850.00,
-            quantity: 10
+            discount: 0.07,
+            quantity: 10,
+            expiredate: "2025-07-09",
+            quantityId: "MR-BV",
+            addCartId: "btn-MR-BV",
+            functionName: "addMiranda"
         }
         ]
     }
-];
-
-let burger = [{
-    name: "Classic Burger (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 750.00,
-    quantity: 10
-},
-{
-    name: "Classic Burger (Regular)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1500.00,
-    quantity: 10
-},
-{
-    name: "Turkey Burger",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1600.00,
-    quantity: 10
-},
-{
-    name: "Chicken Burger (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1400.00,
-    quantity: 10
-},
-{
-    name: "Chicken Burger (Regular)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 800.00,
-    quantity: 10
-},
-{
-    name: "Cheese Burger (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1000.00,
-    quantity: 10
-},
-{
-    name: "Cheese Burger (Regular)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 600.00,
-    quantity: 10
-},
-{
-    name: "Bacon Burger",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 650.00,
-    quantity: 10
-},
-{
-    name: "Shawarma Burger",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 800.00,
-    quantity: 10
-},
-{
-    name: "Olive Burger",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1800.00,
-    quantity: 10
-},
-{
-    name: "Double-Cheese Burger",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1250.00,
-    quantity: 10
-},
-{
-    name: "Crispy Chicken Burger (Regular)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1200.00,
-    quantity: 10
-},
-{
-    name: "Crispy Chicken Burger (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1600.00,
-    quantity: 10
-},
-{
-    name: "Paneer Burger",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 900.00,
-    quantity: 10
-},
-];
-
-let fries = [{
-    name: "Steak Fries (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1200.00,
-    quantity: 10
-},
-{
-    name: "Steak Fries (Medium)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 600.00,
-    quantity: 10
-},
-{
-    name: "French Fries (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 800.00,
-    quantity: 10
-},
-{
-    name: "French Fries (Medium)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 650.00,
-    quantity: 10
-},
-{
-    name: "French Fries (Small)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 450.00,
-    quantity: 10
-},
-{
-    name: "Sweet Potato Fries (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 600.00,
-    quantity: 10
-}
-];
-
-let pasta = [{
-    name: "Chicken n Cheese Pasta",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1600.00,
-    quantity: 10
-},
-{
-    name: "Chicken Penne Pasta",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1700.00,
-    quantity: 10
-},
-{
-    name: "Ground Turkey Pasta Bake",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 2900.00,
-    quantity: 10
-},
-{
-    name: "Creamy Shrimp Pasta",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 2000.00,
-    quantity: 10
-},
-{
-    name: "Lemon Butter Pasta",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1950.00,
-    quantity: 10
-},
-{
-    name: "Tagliatelle Pasta",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 2400.00,
-    quantity: 10
-},
-{
-    name: "Baked Ravioli",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 2000.00,
-    quantity: 10
-}
-];
-
-let chicken = [{
-    name: "Fried Chicken (Small)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1200.00,
-    quantity: 10
-},
-{
-    name: "Fried Chicken (Regular)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 2300.00,
-    quantity: 10
-},
-{
-    name: "Fried Chicken (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 3100.00,
-    quantity: 10
-},
-{
-    name: "Hot Wings (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 2400.00,
-    quantity: 10
-},
-{
-    name: "Devilled Chicken (Large)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 900.00,
-    quantity: 10
-},
-{
-    name: "BBQ Chicken (Regular)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 2100.00,
-    quantity: 10
-}
-];
-
-let beverages = [{
-    name: "Pepsi (330ml)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 990.00,
-    quantity: 10
-},
-{
-    name: "Coca-Cola (330ml)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1230.00,
-    quantity: 10
-},
-{
-    name: "Sprite (330ml)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 1500.00,
-    quantity: 10
-},
-{
-    name: "Mirinda (330ml)",
-    img: "img/classic burger.jpg",
-    par: "some text",
-    price: 850.00,
-    quantity: 10
-}
 ];
 
 function updateMenu(Obj) {
@@ -715,6 +690,7 @@ function updateMenuCart(Obj) {
                             <p>Rs.${data.price}</p>
                                 
                                 <p id="${data.quantityId}">Available : ${data.quantity}</p>
+                                <p>Discount : ${data.discount * 100}%</p>
                                 <button onclick="${data.functionName}()" id="${data.addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
@@ -732,7 +708,8 @@ function updateMenuCart(Obj) {
                             <p>Rs.${data.price}</p>
                                 
                                 <p id="${data.quantityId}">Available : ${data.quantity}</p>
-                                <button onclick="${data.functionName}" id="${data.addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                <p>Discount : ${data.discount * 100}%</p>
+                                <button onclick="${data.functionName}()" id="${data.addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>`
@@ -741,7 +718,9 @@ function updateMenuCart(Obj) {
 
     })
 
-    content += `</div>`;
+    content += ` </div>
+                    <div class="container text-center">
+        </div>`;
     foods.innerHTML = content;
 }
 
@@ -785,17 +764,17 @@ function updateBeveragesMenuCart() {
 }
 
 let customerDetails = [];
-let cusName;
-let cusTelephone;
+let cusID = 0;
 
 function getCustomer() {
-    cusName = document.getElementById("name").value;
-    cusTelephone = document.getElementById("telephone").value;
+    let cusName = document.getElementById("name").value;
+    let cusTelephone = document.getElementById("telephone").value;
     if (cusName == "" || cusTelephone == "") {
         alert("All fields must be filled out");
         return false;
     } else {
         customerDetails.push({
+            ID: "BR-CUS" + ++cusID,
             name: cusName,
             telephone: cusTelephone,
             items: []
@@ -825,8 +804,9 @@ function getCustomer() {
                                 of the card's content.</p>
                             <p id="price">Rs.850</p>
                                 
-                                <p id="quantity">Available : 10</p>
-                                <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                <p id="${allFoodItems[0].details[0].quantityId}">Available : ${allFoodItems[0].details[0].quantity}</p>
+                                <p>Discount : ${allFoodItems[0].details[0].discount * 100}%</p>
+                                <button onclick="${allFoodItems[0].details[0].functionName}()" id="${allFoodItems[0].details[0].addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -839,8 +819,9 @@ function getCustomer() {
                                 of the card's content.</p>
                                 <p id="price">Rs.850</p>
                                     
-                                    <p id="quantity">Available : 10</p>
-                                    <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                    <p id="${allFoodItems[0].details[1].quantityId}">Available : ${allFoodItems[0].details[1].quantity}</p>
+                                    <p>Discount : ${allFoodItems[0].details[1].discount * 100}%</p>
+                                    <button onclick="${allFoodItems[0].details[1].functionName}()" id="${allFoodItems[0].details[1].addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -853,8 +834,9 @@ function getCustomer() {
                                 of the card's content.</p>
                                 <p id="price">Rs.850</p>
                                     
-                                    <p id="quantity">Available : 10</p>
-                                    <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                    <p id="${allFoodItems[0].details[2].quantityId}">Available : ${allFoodItems[0].details[2].quantity}</p>
+                                    <p>Discount : ${allFoodItems[0].details[2].discount * 100}%</p>
+                                    <button onclick="${allFoodItems[0].details[2].functionName}()" id="${allFoodItems[0].details[2].addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -869,8 +851,9 @@ function getCustomer() {
                                 of the card's content.</p>
                             <p id="price">Rs.850</p>
                                 
-                                <p id="quantity">Available : 10</p>
-                                <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                <p id="${allFoodItems[0].details[3].quantityId}">Available : ${allFoodItems[0].details[3].quantity}</p>
+                                <p>Discount : ${allFoodItems[0].details[3].discount * 100}%</p>
+                                    <button onclick="${allFoodItems[0].details[3].functionName}()" id="${allFoodItems[0].details[3].addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -883,8 +866,9 @@ function getCustomer() {
                                 of the card's content.</p>
                                 <p id="price">Rs.850</p>
                                     
-                                    <p id="quantity">Available : 10</p>
-                                    <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                    <p id="${allFoodItems[0].details[4].quantityId}">Available : ${allFoodItems[0].details[4].quantity}</p>
+                                    <p>Discount : ${allFoodItems[0].details[4].discount * 100}%</p>
+                                    <button onclick="${allFoodItems[0].details[4].functionName}()" id="${allFoodItems[0].details[4].addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -897,25 +881,318 @@ function getCustomer() {
                                 of the card's content.</p>
                                 <p id="price">Rs.850</p>
                                     
-                                    <p id="quantity">Available : 10</p>
-                                    <button id="addTocart" class="btn btn-outline-danger">Add to cart</button>
+                                    <p id="${allFoodItems[0].details[5].quantityId}">Available : ${allFoodItems[0].details[5].quantity}</p>
+                                    <p>Discount : ${allFoodItems[0].details[5].discount * 100}%</p>
+                                    <button onclick="${allFoodItems[0].details[5].functionName}()" id="${allFoodItems[0].details[5].addCartId}" class="btn btn-outline-danger">Add to cart</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container text-center">
+        <button onclick="displayCart()" class="btn btn-outline-primary">Proceed to checkout</button>
         </div>`;
         sectionMenu.innerHTML = content;
     }
 }
 
-function addClassicBurgerLarge() {
-    if (allFoodItems[0].details[0].quantity > 0) {
-        let quantity = document.getElementById("CL-BR-LR");
-        customerDetails[customerDetails.length - 1].items.push(allFoodItems[0].details[0].code);
-        quantity.innerText = "Available : "+--allFoodItems[0].details[0].quantity;
-    } else {
-        return false;
-    }
+let orderNumber = 0;
+let tempItemCodeList = [];
+let tempQuantitytList = [];
 
-
+function getItemCode() {
+    customerDetails.forEach(data => {
+        data.items.forEach(code => {
+            tempItemCodeList.push(code.code);
+        })
+    })
+    return tempItemCodeList;
 }
+function getQuantity() {
+    customerDetails.forEach(data => {
+        data.items.forEach(code => {
+            tempQuantitytList.push(code.quantity);
+        })
+    })
+    return tempQuantitytList;
+}
+
+function payment() {
+    orderDetails.push({
+        orderId: "OR-" + ++orderNumber,
+        customer: {
+            name: customerDetails[customerDetails.length - 1].name,
+            telephone: customerDetails[customerDetails.length - 1].telephone
+        },
+        date: new Date(),
+        itemList: {
+            code: getItemCode(),
+            price: tempPriceList,
+            discount: tempDiscountList,
+            quantity: getQuantity()
+        },
+        orderTotal: total
+    });
+}
+
+
+function addFoodItemToCustomer(item) {
+    if (item.expiredate == "") {
+        if (item.quantity > 0) {
+            let quantity = document.getElementById(item.quantityId);
+            let foundItem = false;
+
+            customerDetails.forEach(details => {
+                details.items.forEach(data => {
+                    if (data.code === item.code) {
+                        data.quantity++;
+                        foundItem = true;
+                        return;
+                    }
+                });
+                if (foundItem) return;
+            });
+
+            if (!foundItem) {
+                customerDetails[customerDetails.length - 1].items.push({
+                    code: item.code,
+                    quantity: 1
+                });
+            }
+
+            quantity.innerText = "Available : " + --item.quantity;
+        } else {
+            return false;
+        }
+    } else {
+        let today = new Date();
+        let ex = new Date(item.expiredate);
+        if (today > ex) {
+            alert("It is expired.");
+            return false;
+        } else {
+            if (item.quantity > 0) {
+                let quantity = document.getElementById(item.quantityId);
+                let foundItem = false;
+
+                customerDetails.forEach(details => {
+                    details.items.forEach(data => {
+                        if (data.code === item.code) {
+                            data.quantity++;
+                            foundItem = true;
+                            return;
+                        }
+                    });
+                    if (foundItem) return;
+                });
+
+                if (!foundItem) {
+                    customerDetails[customerDetails.length - 1].items.push({
+                        code: item.code,
+                        quantity: 1
+                    });
+                }
+
+                quantity.innerText = "Available : " + --item.quantity;
+            } else {
+                return false;
+            }
+        }
+    }
+}
+
+let total;
+
+let orderDetails = [];
+let tempPriceList = [];
+let tempDiscountList = [];
+
+function displayCart() {
+    let tbl = document.getElementById("tblCart");
+    total = 0;
+    let content = `<table class="table" id="tblCart">
+                <thead>
+                  <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price (Rs.)</th>
+                    <th scope="col">Discount</th>
+                  </tr>
+                </thead> 
+                <tbody>`;
+    customerDetails.forEach(data => {
+        data.items.forEach(item => {
+            allFoodItems.forEach(catogory => {
+                catogory.details.forEach(get => {
+                    if (get.code === item.code) {
+                        content += `<tr>
+                                    <td>${get.name}</td>
+                                    <td>${item.quantity}</td>
+                                    <td>${get.price}</td>
+                                    <td>${get.discount * 100}%</td>
+                                </tr>`;
+                        tempPriceList.push(get.price);
+                        tempDiscountList.push(get.discount);
+                        total += (item.quantity * get.price) - (get.discount * get.price * item.quantity);
+                    }
+                })
+            })
+        })
+    })
+
+    content += `</tbody>
+              </table>
+              <p>Your total : Rs.${total}</p>
+              <button onclick="payment()" class="btn btn-outline-primary">Pay and enjoy your order</button>`;
+    tbl.innerHTML = content;
+}
+
+function addClassicBurgerLarge() {
+    addFoodItemToCustomer(allFoodItems[0].details[0]);
+}
+function addClassicBurgerRegular() {
+    addFoodItemToCustomer(allFoodItems[0].details[1]);
+}
+function addTurkeyburger() {
+    addFoodItemToCustomer(allFoodItems[0].details[2]);
+}
+function addChickenBurgerLarge() {
+    addFoodItemToCustomer(allFoodItems[0].details[3]);
+}
+function addChickenBurgerRegular() {
+    addFoodItemToCustomer(allFoodItems[0].details[4]);
+}
+function addCheeseBurgerLarge() {
+    addFoodItemToCustomer(allFoodItems[0].details[5]);
+}
+function addCheeseBurgerRegular() {
+    addFoodItemToCustomer(allFoodItems[0].details[6]);
+}
+function addBaconBurger() {
+    addFoodItemToCustomer(allFoodItems[0].details[7]);
+}
+function addShawarmaBurger() {
+    addFoodItemToCustomer(allFoodItems[0].details[8]);
+}
+function addOliveBurger() {
+    addFoodItemToCustomer(allFoodItems[0].details[9]);
+}
+function addCheeseBurgerDouble() {
+    addFoodItemToCustomer(allFoodItems[0].details[10]);
+}
+function addChickenBurgerCrispyRegular() {
+    addFoodItemToCustomer(allFoodItems[0].details[11]);
+}
+function addChickenBurgerCrispyLarge() {
+    addFoodItemToCustomer(allFoodItems[0].details[12]);
+}
+function addPaneerBurger() {
+    addFoodItemToCustomer(allFoodItems[0].details[13]);
+}
+
+
+function addCrispyChickenSubLarge() {
+    addFoodItemToCustomer(allFoodItems[1].details[0]);
+}
+function addCrispyChickenSubRegular() {
+    addFoodItemToCustomer(allFoodItems[1].details[1]);
+}
+function addChickenSubLarge() {
+    addFoodItemToCustomer(allFoodItems[1].details[2]);
+}
+function addChickenSubRegular() {
+    addFoodItemToCustomer(allFoodItems[1].details[3]);
+}
+function addGrinderSub() {
+    addFoodItemToCustomer(allFoodItems[1].details[4]);
+}
+function addCheeseSub() {
+    addFoodItemToCustomer(allFoodItems[1].details[5]);
+}
+function addDoubleCheeseChickenSub() {
+    addFoodItemToCustomer(allFoodItems[1].details[6]);
+}
+function addSpecialHorgieSub() {
+    addFoodItemToCustomer(allFoodItems[1].details[7]);
+}
+function addMosSpecialSub() {
+    addFoodItemToCustomer(allFoodItems[1].details[8]);
+}
+
+
+function addSteakFriesLarge() {
+    addFoodItemToCustomer(allFoodItems[2].details[0]);
+}
+function addSteakFriesMedium() {
+    addFoodItemToCustomer(allFoodItems[2].details[1]);
+}
+function addFrenchFriesLarge() {
+    addFoodItemToCustomer(allFoodItems[2].details[2]);
+}
+function addFrenchFriesMedium() {
+    addFoodItemToCustomer(allFoodItems[2].details[3]);
+}
+function addFrenchFriesSmall() {
+    addFoodItemToCustomer(allFoodItems[2].details[4]);
+}
+function addSweetPotatoFriesLarge() {
+    addFoodItemToCustomer(allFoodItems[2].details[5]);
+}
+
+
+function addChickenCheesePasta() {
+    addFoodItemToCustomer(allFoodItems[3].details[0]);
+}
+function addChickenPenePasta() {
+    addFoodItemToCustomer(allFoodItems[3].details[1]);
+}
+function addTurkeyPasta() {
+    addFoodItemToCustomer(allFoodItems[3].details[2]);
+}
+function addCreamyPasta() {
+    addFoodItemToCustomer(allFoodItems[3].details[3]);
+}
+function addLemonPasta() {
+    addFoodItemToCustomer(allFoodItems[3].details[4]);
+}
+function addTangilatePasta() {
+    addFoodItemToCustomer(allFoodItems[3].details[5]);
+}
+function addBakedRavioli() {
+    addFoodItemToCustomer(allFoodItems[3].details[6]);
+}
+
+
+function addFriedChickenSmall() {
+    addFoodItemToCustomer(allFoodItems[4].details[0]);
+}
+function addFriedChickenRegular() {
+    addFoodItemToCustomer(allFoodItems[4].details[1]);
+}
+function addFriedChickenLarge() {
+    addFoodItemToCustomer(allFoodItems[4].details[2]);
+}
+function addHotWingsLarge() {
+    addFoodItemToCustomer(allFoodItems[4].details[3]);
+}
+function addDevilledChickenLarge() {
+    addFoodItemToCustomer(allFoodItems[4].details[4]);
+}
+function addBbqChickenRegular() {
+    addFoodItemToCustomer(allFoodItems[4].details[5]);
+}
+
+
+function addPepsi() {
+    addFoodItemToCustomer(allFoodItems[5].details[0]);
+}
+function addCocaCola() {
+    addFoodItemToCustomer(allFoodItems[5].details[1]);
+}
+function addSpriter() {
+    addFoodItemToCustomer(allFoodItems[5].details[2]);
+}
+function addMiranda() {
+    addFoodItemToCustomer(allFoodItems[5].details[3]);
+}
+

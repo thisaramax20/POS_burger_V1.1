@@ -10,6 +10,10 @@ body{
     color: white;
 }
 
+#tblCart{
+    background-color: rgb(18, 17, 17);;
+}
+
 /*Nav links*/
 nav,.nav-links{
     display: flex;
