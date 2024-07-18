@@ -14,6 +14,14 @@ body{
     background-color: rgb(18, 17, 17);;
 }
 
+#promo{
+    background-color: rgb(37, 41, 39);
+    border-radius: 10px;
+}
+#promoh5{
+    color:rgb(218, 170, 26);
+}
+
 /*Nav links*/
 nav,.nav-links{
     display: flex;

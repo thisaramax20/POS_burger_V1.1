@@ -11,183 +11,306 @@
 
 <body>
 
-    <section id="profile">
-        <nav id="desktop-nav">
-            <div class="logo">
-                <h1 id="main-logo">BUR<span>GER</span></h1>
-            </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
+    <div id="bodyMain">
 
-        <nav id="hamburger-nav">
-            <div class="logo">
-                <h1 id="main-logo">BUR<span>GER</span></h1>
-            </div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <section id="profile">
+            <nav id="desktop-nav">
+                <div class="logo">
+                    <h1 id="main-logo">BUR<span>GER</span></h1>
                 </div>
-                <div class="menu-links">
-                    <li><a href="/" onclick="toggleMenu()">Home</a></li>
-                    <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
-                    <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                    </ul>
                 </div>
-            </div>
-        </nav>
-    </section>
+            </nav>
 
-    <section id="welcome">
-        <div class="container my-5 mx-4">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 mx-0">
-                    <img src="img/c.png" class="img-fluid" alt="">
+            <nav id="hamburger-nav">
+                <div class="logo">
+                    <h1 id="main-logo">BUR<span>GER</span></h1>
                 </div>
-                <div class="col-lg-6 mx-0">
-                    <h1>ENJOY BURGER MAKE YOUR TUMMY HAPPY</h1>
-                    <hr>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, suscipit. Aliquid, esse
-                        atque. Mollitia repellendus possimus consectetur reprehenderit labore magni commodi natus libero
-                        atque soluta, voluptate eum at dolores saepe?</p>
-                    <div class="row mt-4">
-                        <div class="col">
-                            <img src="icons/utensil.png" alt="">
-                        </div>
-                        <div class="col">
-                            <img src="icons/fresh.png" alt="">
-                        </div>
-                        <div class="col">
-                            <img src="icons/organic.png" alt="">
-                        </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col">
-                            Delicious
+                    <div class="menu-links">
+                        <li><a href="/" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+                        <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="welcome">
+            <div class="container my-5 mx-4">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 mx-0">
+                        <img src="img/file.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 mx-0">
+                        <h1>ENJOY BURGER MAKE YOUR TUMMY HAPPY</h1>
+                        <hr>
+                        <p>Indulge in the ultimate burger experience at BURGER. Since 2009, we've been
+                            dedicated to perfecting the art of burger-making. From our juicy,
+                            handcrafted patties to our array of mouthwatering toppings and sauces, every bite at BURGER
+                            is a journey of flavor. Join us and discover why we're not just a burger
+                            joint but a destination for burger lovers everywhere.</p>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <img src="icons/utensil.png" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="icons/fresh.png" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="icons/organic.png" alt="">
+                            </div>
                         </div>
-                        <div class="col">
-                            Fresh
-                        </div>
-                        <div class="col">
-                            Organic
+                        <div class="row mt-3">
+                            <div class="col">
+                                Delicious
+                            </div>
+                            <div class="col">
+                                Fresh
+                            </div>
+                            <div class="col">
+                                Organic
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="menu">
-        <div class="heading">
-            <h2 class="text-center">OUR BEST MENU</h2>
-            <p class="text-center ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam non sed deleniti iure.
-            </p>
-        </div>
-        <div class="button text-center">
-            <button onclick="updateBurgerMenu()" class="btn btn-outline-warning mx-4">Burgers</button>
-            <button onclick="updateSubmarineMenu()" class="btn btn-outline-warning mx-4">Submarines</button>
-            <button onclick="updateFriesMenu()" class="btn btn-outline-warning mx-4">Fries</button>
-            <button onclick="updatePastaMenu()" class="btn btn-outline-warning mx-4">Pasta</button>
-            <button onclick="updateChickenMenu()" class="btn btn-outline-warning mx-4">Chicken</button>
-            <button onclick="updateBeveragesMenu()" class="btn btn-outline-warning mx-4">Beverages</button>
-        </div>
-        <div id="foods" class="food-items container">
-            <div class="row my-lg-5 my-sm-3 justify-content-center">
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img//burger/large burger.jpg" class="card-img-top" height="170px" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Classic Burger (Large)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p id="price">Rs.850</p>
-                            <p id="quantity">Available : 10</p>
-                            
+        <section id="about">
+            <div class="container p-5">
+                <h1 class="text-center my-5">ABOUT US</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/burger/large burger.jpg" class="img-fluid rounded-3" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>FIND YOUR BEST TASTED FOOD & DRINK JUST IN ONE PLACE</h2>
+                        <hr>
+                        <p>Welcome to BURGER, where we're passionate about crafting delicious burgers
+                            using the freshest ingredients. Since 2009, we've been dedicated to
+                            delivering exceptional flavors and a memorable dining experience to burger enthusiasts
+                            everywhere.</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="icons/tick.png" alt="">
+                                <p>Best Price</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="icons/tick.png" alt="">
+                                <p>Best Service</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img src="icons/tick.png" alt="">
+                                    <p>Fresh Ingrdient</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="icons/tick.png" alt="">
+                                    <p>Health Protocol</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/burger/classic burger.jpg" class="card-img-top" height="170px" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Classic Burger (Regular)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p id="price">Rs.850</p>
-                            <p id="quantity">Available : 10</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/burger/turkey burger.jpg" class="card-img-top" height="170px" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Turkey Burger</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p id="price">Rs.850</p>
-                                
+        </section>
+
+        <section id="menu" class="m-5">
+            <div class="heading">
+                <h2 class="text-center m-3">OUR BEST MENU</h2>
+                <p class="text-center m-3">"Explore our diverse menu of handcrafted burgers, each bursting with flavor and
+                    made with the freshest ingredients."
+                </p>
+            </div>
+            <div class="button text-center m-4">
+                <button onclick="updateBurgerMenu()" class="btn btn-outline-warning mx-4">Burgers</button>
+                <button onclick="updateSubmarineMenu()" class="btn btn-outline-warning mx-4">Submarines</button>
+                <button onclick="updateFriesMenu()" class="btn btn-outline-warning mx-4">Fries</button>
+                <button onclick="updatePastaMenu()" class="btn btn-outline-warning mx-4">Pasta</button>
+                <button onclick="updateChickenMenu()" class="btn btn-outline-warning mx-4">Chicken</button>
+                <button onclick="updateBeveragesMenu()" class="btn btn-outline-warning mx-4">Beverages</button>
+            </div>
+            <div id="foods" class="food-items container">
+                <div class="row my-lg-5 my-sm-3 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white" style="width: 18rem;">
+                            <img src="img//burger/large burger.jpg" class="card-img-top" height="170px" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Burger (Large)</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <p id="price">Rs.850</p>
                                 <p id="quantity">Available : 10</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white" style="width: 18rem;">
+                            <img src="img/burger/classic burger.jpg" class="card-img-top" height="170px" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Burger (Regular)</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <p id="price">Rs.850</p>
+                                <p id="quantity">Available : 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white" style="width: 18rem;">
+                            <img src="img/burger/turkey burger.jpg" class="card-img-top" height="170px" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Turkey Burger</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <p id="price">Rs.850</p>
+
+                                <p id="quantity">Available : 10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-lg-5 my-sm-3 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white" style="width: 18rem;">
+                            <img src="img/burger/chicken burger large.jpg" class="card-img-top" height="170px"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Burger (Large)</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <p id="price">Rs.850</p>
+
+                                <p id="quantity">Available : 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white" style="width: 18rem;">
+                            <img src="img/burger/chicken burger regular.jpg" class="card-img-top" height="170px"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Burger (Regular)</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <p id="price">Rs.850</p>
+
+                                <p id="quantity">Available : 10</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white" style="width: 18rem;">
+                            <img src="img/burger/cheese burger regular.jpg" class="card-img-top" height="170px"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cheese Burger (Large)</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <p id="price">Rs.850</p>
+
+                                <p id="quantity">Available : 10</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row my-lg-5 my-sm-3 justify-content-center">
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/burger/chicken burger large.jpg" class="card-img-top" height="170px" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken Burger (Large)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p id="price">Rs.850</p>
 
-                            <p id="quantity">Available : 10</p>
+            <div class="text-center">
+                <button class="btn btn-outline-warning" onclick="loadCustomerpage()">Order Now</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-lg-6 p-3" id="promo">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 id="promoh5">Payday Promo</h5>
+                                <h2>GET A 10% DISCOUNT ON PAYDAY WEEK</h2>
+                                <p>some text</p>
+                                <h5 id="promoh5">Buy online</h5>
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="img-fluid my-3 opacity-50" src="img/promo2.jpg" width="200px" height="200px"
+                                    alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/burger/chicken burger regular.jpg" class="card-img-top" height="170px" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Chicken Burger (Regular)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p id="price">Rs.850</p>
-
-                            <p id="quantity">Available : 10</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/burger/cheese burger regular.jpg" class="card-img-top" height="170px" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Cheese Burger (Large)</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p id="price">Rs.850</p>
-
-                            <p id="quantity">Available : 10</p>
+                    <div class="col-lg-6 p-3" id="promo">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5 id="promoh5">Payday Promo</h5>
+                                <h2>GET A 10% DISCOUNT ON PAYDAY WEEK</h2>
+                                <p>some text</p>
+                                <h5 id="promoh5">Buy online</h5>
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="img-fluid my-3 opacity-50" src="img/promo1.jpg" width="150px" height="150px"
+                                    alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+
+    </div>
+
+    <footer id="footer">
+        <div class="container my-5 text-center" id="pr">
+            <div class="row">
+                <div class="col-lg-4 p-3">
+                    <img src="icons/burger.png" class="img-fluid" alt="">
+                    <h2>BURGER</h2>
+                    <button class="btn btn-outline-warning" onclick="loadAdminpage()">Admin Login</button>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <h5>Contact Information</h5>
+                    <p><img src="icons/email.png" class="img-fluid" width="15px" height="15px" alt="">&nbsp;
+                        burger123@email.com</p>
+                    <p><img src="icons/tel.png" class="img-fluid" width="15px" height="15px" alt="">&nbsp; (+94 )
+                        878934567</p>
+                    <p><img src="icons/adress.png" class="img-fluid" width="15px" height="15px" alt="">&nbsp; Main
+                        Rd,Colombo
+                    </p>
+                </div>
+                <div class="col-lg-4 p-3">
+                    <h5>Social Network</h5>
+                    <p><img src="icons/insta.png" class="img-fluid" width="15px" height="15px" alt="">&nbsp;
+                        Instagram</p>
+                    <p><img src="icons/fb.png" class="img-fluid" width="15px" height="15px" alt="">&nbsp; Facebook</p>
+                    <p><img src="icons/whatsapp.png" class="img-fluid" width="15px" height="15px" alt="">&nbsp; Whatsapp
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">All Rights Reserved</p>
         </div>
 
-        <div class="text-center">
-            <button class="btn btn-outline-warning" onclick="location.href='customer.html'">Order Now</button>
-        </div>
-    </section>
+    </footer>
 
 
 

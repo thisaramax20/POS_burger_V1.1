@@ -638,7 +638,7 @@ function updateMenu(Obj) {
 
         if (count != 3) {
             content += `<div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${data.name}</h5>
@@ -654,7 +654,7 @@ function updateMenu(Obj) {
             count = 0;
             content += `</div><div class="row my-lg-5 my-sm-3 justify-content-center">
                         <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${data.name}</h5>
@@ -682,7 +682,7 @@ function updateMenuCart(Obj) {
 
         if (count != 3) {
             content += `<div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${data.name}</h5>
@@ -691,7 +691,7 @@ function updateMenuCart(Obj) {
                                 
                                 <p id="${data.quantityId}">Available : ${data.quantity}</p>
                                 <p>Discount : ${data.discount * 100}%</p>
-                                <button onclick="${data.functionName}()" id="${data.addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                <button onclick="${data.functionName}()" id="${data.addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>`
@@ -700,7 +700,7 @@ function updateMenuCart(Obj) {
             count = 0;
             content += `</div><div class="row my-lg-5 my-sm-3 justify-content-center">
                         <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white"rd" style="width: 18rem;">
                         <img src="${data.img}" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${data.name}</h5>
@@ -709,7 +709,7 @@ function updateMenuCart(Obj) {
                                 
                                 <p id="${data.quantityId}">Available : ${data.quantity}</p>
                                 <p>Discount : ${data.discount * 100}%</p>
-                                <button onclick="${data.functionName}()" id="${data.addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                <button onclick="${data.functionName}()" id="${data.addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>`
@@ -774,12 +774,12 @@ function getCustomer() {
         return false;
     } else {
         customerDetails.push({
-            ID: "BR-CUS" + ++cusID,
+            ID: "BR-CS-" + ++cusID,
             name: cusName,
             telephone: cusTelephone,
-            items: []
+            items: [],
         })
-        let sectionMenu = document.getElementById("menu");
+        let sectionMenu = document.getElementById("customerPage");
         let content = `<div class="heading">
             <h2 class="text-center">OUR BEST MENU</h2>
             <p class="text-center ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam non sed deleniti iure.
@@ -796,7 +796,7 @@ function getCustomer() {
         <div id="foods" class="food-items container">
             <div class="row my-lg-5 my-sm-3 justify-content-center">
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="img//burger/large burger.jpg" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Classic Burger (Large)</h5>
@@ -806,12 +806,12 @@ function getCustomer() {
                                 
                                 <p id="${allFoodItems[0].details[0].quantityId}">Available : ${allFoodItems[0].details[0].quantity}</p>
                                 <p>Discount : ${allFoodItems[0].details[0].discount * 100}%</p>
-                                <button onclick="${allFoodItems[0].details[0].functionName}()" id="${allFoodItems[0].details[0].addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                <button onclick="${allFoodItems[0].details[0].functionName}()" id="${allFoodItems[0].details[0].addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="img/burger/classic burger.jpg" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Classic Burger (Regular)</h5>
@@ -821,12 +821,12 @@ function getCustomer() {
                                     
                                     <p id="${allFoodItems[0].details[1].quantityId}">Available : ${allFoodItems[0].details[1].quantity}</p>
                                     <p>Discount : ${allFoodItems[0].details[1].discount * 100}%</p>
-                                    <button onclick="${allFoodItems[0].details[1].functionName}()" id="${allFoodItems[0].details[1].addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                    <button onclick="${allFoodItems[0].details[1].functionName}()" id="${allFoodItems[0].details[1].addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="img/burger/turkey burger.jpg" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Turkey Burger</h5>
@@ -836,14 +836,14 @@ function getCustomer() {
                                     
                                     <p id="${allFoodItems[0].details[2].quantityId}">Available : ${allFoodItems[0].details[2].quantity}</p>
                                     <p>Discount : ${allFoodItems[0].details[2].discount * 100}%</p>
-                                    <button onclick="${allFoodItems[0].details[2].functionName}()" id="${allFoodItems[0].details[2].addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                    <button onclick="${allFoodItems[0].details[2].functionName}()" id="${allFoodItems[0].details[2].addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row my-lg-5 my-sm-3 justify-content-center">
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="img/burger/chicken burger large.jpg" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Chicken Burger (Large)</h5>
@@ -853,12 +853,12 @@ function getCustomer() {
                                 
                                 <p id="${allFoodItems[0].details[3].quantityId}">Available : ${allFoodItems[0].details[3].quantity}</p>
                                 <p>Discount : ${allFoodItems[0].details[3].discount * 100}%</p>
-                                    <button onclick="${allFoodItems[0].details[3].functionName}()" id="${allFoodItems[0].details[3].addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                    <button onclick="${allFoodItems[0].details[3].functionName}()" id="${allFoodItems[0].details[3].addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="img/burger/chicken burger regular.jpg" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Chicken Burger (Regular)</h5>
@@ -868,12 +868,12 @@ function getCustomer() {
                                     
                                     <p id="${allFoodItems[0].details[4].quantityId}">Available : ${allFoodItems[0].details[4].quantity}</p>
                                     <p>Discount : ${allFoodItems[0].details[4].discount * 100}%</p>
-                                    <button onclick="${allFoodItems[0].details[4].functionName}()" id="${allFoodItems[0].details[4].addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                    <button onclick="${allFoodItems[0].details[4].functionName}()" id="${allFoodItems[0].details[4].addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card bg-dark text-white" style="width: 18rem;">
                         <img src="img/burger/cheese burger regular.jpg" class="card-img-top" height="170px" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Cheese Burger (Large)</h5>
@@ -883,7 +883,7 @@ function getCustomer() {
                                     
                                     <p id="${allFoodItems[0].details[5].quantityId}">Available : ${allFoodItems[0].details[5].quantity}</p>
                                     <p>Discount : ${allFoodItems[0].details[5].discount * 100}%</p>
-                                    <button onclick="${allFoodItems[0].details[5].functionName}()" id="${allFoodItems[0].details[5].addCartId}" class="btn btn-outline-danger">Add to cart</button>
+                                    <button onclick="${allFoodItems[0].details[5].functionName}()" id="${allFoodItems[0].details[5].addCartId}" class="btn btn-outline-warning">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -891,7 +891,14 @@ function getCustomer() {
         </div>
         <div class="container text-center">
         <button onclick="displayCart()" class="btn btn-outline-primary">Proceed to checkout</button>
-        </div>`;
+        </div>
+        <section id="cart">
+        <div class="container text-center my-4">
+            <table class="table table-borderless table-dark bg-opacity-50 rounded-3" id="tblCart">
+
+            </table>
+        </div>
+    </section>`;
         sectionMenu.innerHTML = content;
     }
 }
@@ -917,22 +924,33 @@ function getQuantity() {
     return tempQuantitytList;
 }
 
+let pay = 0;
 function payment() {
-    orderDetails.push({
-        orderId: "OR-" + ++orderNumber,
-        customer: {
-            name: customerDetails[customerDetails.length - 1].name,
-            telephone: customerDetails[customerDetails.length - 1].telephone
-        },
-        date: new Date(),
-        itemList: {
-            code: getItemCode(),
-            price: tempPriceList,
-            discount: tempDiscountList,
-            quantity: getQuantity()
-        },
-        orderTotal: total
-    });
+    let data = document.getElementById("thanks");
+    if(pay===1){
+        return false;
+    }else{
+        orderDetails.push({
+            orderId: "OR-" + ++orderNumber,
+            customer: {
+                cusID: customerDetails[customerDetails.length-1].ID,
+                name: customerDetails[customerDetails.length - 1].name,
+                telephone: customerDetails[customerDetails.length - 1].telephone
+            },
+            date: new Date(),
+            itemList: {
+                code: getItemCode(),
+                price: tempPriceList,
+                discount: tempDiscountList,
+                quantity: getQuantity()
+            },
+            orderTotal: total
+        });
+        pay++;
+        let content = `<h4 class="text-center my-3">Enjoy your burger... Do come again...</h4>`;
+        data.innerHTML=content;
+    }
+    
 }
 
 
@@ -1010,7 +1028,7 @@ let tempDiscountList = [];
 function displayCart() {
     let tbl = document.getElementById("tblCart");
     total = 0;
-    let content = `<table class="table" id="tblCart">
+    let content = `<table class="table table-borderless table-dark bg-opacity-50 rounded-3" id="tblCart">
                 <thead>
                   <tr>
                     <th scope="col">Item</th>
@@ -1042,8 +1060,9 @@ function displayCart() {
 
     content += `</tbody>
               </table>
-              <p>Your total : Rs.${total}</p>
-              <button onclick="payment()" class="btn btn-outline-primary">Pay and enjoy your order</button>`;
+              <p class="text-center my-4">Your total : Rs.${total}</p>
+              <button onclick="payment()" class="btn btn-outline-primary my-4">Pay and enjoy your order</button>
+              <h4 id="thanks">`;
     tbl.innerHTML = content;
 }
 
@@ -1196,3 +1215,282 @@ function addMiranda() {
     addFoodItemToCustomer(allFoodItems[5].details[3]);
 }
 
+let adminDetails = [
+    {
+        userName: "BR-AD-01",
+        password: "1234"
+    },
+    {
+        userName: "BR-AD-02",
+        password: "5678"
+    },
+];
+
+function login() {
+    let typedUserName = document.getElementById("adminID").value;
+    let typedPassword = document.getElementById("adminPassword").value;
+
+    let proceed = document.getElementById("adminCoverPage");
+    let content = `<div class="container text-center my-4" id="adminCoverPage">
+        <h2>Welcome Admin</h1>
+    <div class="button text-center">
+            <button onclick="customerManagement()" class="btn btn-outline-warning mx-4">Customer Management</button>
+            <button onclick="salesManagement()" class="btn btn-outline-warning mx-4">Sales Management</button>
+        </div>
+        </div>
+        <h1 id="option">`;
+
+    let success = false;    
+    adminDetails.forEach(data => {
+        if (data.userName === typedUserName && data.password === typedPassword) {
+            proceed.innerHTML=content;
+            success = true;
+            return;
+        }
+        if (success) {
+            return false;
+        }
+        else{
+            alert("Please try again...");
+        }
+    })
+}
+
+function customerManagement(){
+    let reload = document.getElementById("option");
+    let content =  `<div class="container button text-center my-4">
+            <button onclick="addNewCustomer()" class="btn btn-outline-warning mx-4">Add New Customer</button>
+            <button onclick="viewCus()" class="btn btn-outline-warning mx-4">View Customer Details</button>
+            <button onclick="editCustomer()" class="btn btn-outline-warning mx-4">Edit Customer Details</button>
+        </div>
+        <h1 id="cusOption">`
+    reload.innerHTML=content;    
+}
+
+function salesManagement(){
+    let reload = document.getElementById("option");
+    let content =  `<div class="container button text-center my-4">
+            <button onclick="report()" class="btn btn-outline-warning mx-4">Monthly Report</button>
+            <button onclick="report()" class="btn btn-outline-warning mx-4">Annual Report</button>
+            <button onclick="reportCustomer()" class="btn btn-outline-warning mx-4">Customer Report</button>
+        </div>
+        <h1 id="salesOption">`
+    reload.innerHTML=content;    
+}
+
+function report(){
+    let data = document.getElementById("salesOption");
+    let content = `<table class="table table-borderless table-dark my-4" id="tblCart">
+                <thead>
+                  <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Quantity</th>
+                  </tr>
+                </thead> 
+                <tbody>`;
+
+    allFoodItems.forEach(data =>{
+        data.details.forEach(list =>{
+            content+=`<tr>
+                    <td>${list.code}</td>
+                    <td>${list.name}</td>
+                    <td>${list.quantity}</td>
+                    </tr>`;
+        })
+    })
+    
+    let total = 0; 
+    orderDetails.forEach(data =>{
+        total+=data.orderTotal;
+    })
+    content+=`</tbody></table>
+                <h5 class="text-center my-3">Sales : Rs.${total}</h5>`;            
+    data.innerHTML=content;
+                
+}
+
+function reportCustomer(){
+    let data = document.getElementById("salesOption");
+    let content = `<table class="table table-borderless table-dark my-4" id="tblCart">
+                <thead>
+                  <tr>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Sales</th>
+                  </tr>
+                </thead> 
+                <tbody>`;
+
+    orderDetails.forEach(data =>{
+        content+=`<tr>
+                    <td>${data.customer.cusID}</td>
+                    <td>${data.customer.name}</td>
+                    <td>${data.orderTotal}</td>
+                    `;
+    })
+    data.innerHTML=content;            
+}
+
+function addNewCustomer(){
+    let data = document.getElementById("cusOption");
+    let content = `<div class="container text-center my-4" id="addCustomerNew">
+        <h2>Please Fill the below Details</h1>   
+    
+        <div class="mb-3">
+            <label for="adminID" class="form-label">Name</label>
+            <input type="text" class="form-control bg-black text-white" id="cusName" placeholder="BR-AD-01">
+          </div>
+        <div class="mb-3">
+            <label for="adminID" class="form-label">Telephone</label>
+            <input type="number" class="form-control bg-black text-white" id="cusTel">
+          </div>
+
+          <button onclick="addNewCus()" class="btn btn-outline-warning mx-4 text-center">Proceed</button>
+          
+    </div>`;
+    data.innerHTML=content;
+}
+
+function editCustomer(){
+    let data = document.getElementById("cusOption");
+    let content = `<div class="container text-center my-4" id="EditCustomer">
+        <h2>Search by ID</h1>   
+    
+        <div class="mb-3">
+            <label for="cusID" class="form-label">Enter Customer ID</label>
+            <input type="text" class="form-control bg-black text-white" id="cusId" placeholder="BR-CS-01">
+          </div>
+        <div class="mb-3">
+            <label for="cusID" class="form-label">Enter New Name</label>
+            <input type="text" class="form-control bg-black text-white" id="cusName" placeholder="BR-CS-01">
+          </div>
+        <div class="mb-3">
+            <label for="cusID" class="form-label">Enter New Telephone</label>
+            <input type="text" class="form-control bg-black text-white" id="cusTel" placeholder="BR-CS-01">
+          </div>
+          <button onclick="editDetails()" class="btn btn-outline-warning mx-4 text-center">Proceed</button>
+          
+    </div>`;
+    data.innerHTML=content;
+}
+
+function editDetails(){
+    let id = document.getElementById("cusId").value;
+    let name = document.getElementById("cusName").value;
+    let tel = document.getElementById("cusTel").value;
+    customerDetails.forEach(data =>{
+        if (data.ID===id) {
+            data['name']=name;
+            data['telephone']=tel;
+            alert("Success...");
+        }else{
+            alert("There is no record by that ID...");
+            return false;
+        }
+    })
+    
+}
+
+function addNewCus(){
+    let name = document.getElementById("cusName").value;
+    let tel = document.getElementById("cusTel").value;
+    customerDetails.push({
+        ID: "BR-CUS" + ++cusID,
+        name: name,
+        telephone: tel,
+        items: [],
+    });
+}
+
+
+function viewCus(){
+    let data = document.getElementById("cusOption");
+    let content = `<table class="table table-borderless table-dark my-4 fw-lighter" id="tblCart">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Telephone</th>
+                    <th scope="col">Order</th>
+                  </tr>
+                </thead> 
+                <tbody>`;
+    let success = false;
+    customerDetails.forEach(data =>{
+        content+=`<tr>
+                    <td>${data.name}</td>
+                    <td>${data.telephone}</td>
+                    `;
+
+                    orderDetails.forEach(order =>{
+                        if(order.customer.name===data.name){
+                            content+=`<td>${order.orderId}</td>
+                                        </tr>`;
+                            success=true;
+                            return;            
+                        }
+                        if(!success){
+                            return;
+                        }
+                    })   
+    })       
+      
+    data.innerHTML=content;
+}
+
+function loadCustomerpage(){
+    let data = document.getElementById("bodyMain");
+    let content = `<div id="customerPage" class="container my-5">
+    <div>
+        <h3 class="text-center">Please fill out these details to enjoy your burger</h3><hr>
+    </div>
+    <div class="container">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input required type="text" class="form-control bg-black text-white" id="name" placeholder="Saman">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Telephone</label>
+            <input required type="text" class="form-control bg-black text-white" id="telephone" placeholder="0754329765">
+          </div>
+        <button type="button" onclick="getCustomer()" class="btn btn-outline-primary">Submit</button>  
+    </div>
+
+    <section id="menu">   
+
+
+    </section>
+    
+    <section id="cart">
+        <div class="container text-center">
+            <table class="table table-borderless table-dark bg-transparent" id="tblCart">
+
+            </table>
+        </div>
+    </section>
+    </div>`;
+
+    data.innerHTML=content;
+}
+
+function loadAdminpage(){
+    let data = document.getElementById("bodyMain");
+    let content = `<div class="container text-center my-4" id="adminCoverPage">
+        <h2 class="my-4">Welcome Admin</h1>
+         <h4 class="my-4">Please Log in to Proceed</h4>   
+    
+        <div class="mb-3">
+            <label for="adminID" class="form-label">User Name</label>
+            <input type="text" class="form-control bg-black text-white" id="adminID" placeholder="BR-AD-01">
+          </div>
+        <div class="mb-3">
+            <label for="adminID" class="form-label">Password</label>
+            <input type="password" class="form-control bg-black text-white" id="adminPassword">
+          </div>
+
+          <button onclick="login()" class="btn btn-outline-warning mx-4 text-center">Login</button>
+          
+    </div>`;
+
+    data.innerHTML=content;
+}
